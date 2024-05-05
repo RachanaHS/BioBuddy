@@ -1,13 +1,13 @@
 """app.py"""
 import streamlit as st
 from streamlit_chat import message
-from langchain_community.chains import ConversationalRetrievalChain
-from langchain_community.embeddings import HuggingFaceEmbedding
+from langchain.chains import ConversationalRetrievalChain
+from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import FAISS
+from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.llms import HuggingFaceHub
+from langchain.document_loaders import PyPDFLoader
+from langchain.llms import HuggingFaceHub
 import os
 import tempfile
 import time
