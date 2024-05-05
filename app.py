@@ -75,7 +75,7 @@ def main():
     # st.caption('Know Your Candidate')
     st.subheader('Know Your Candidate')
     # Initialize Streamlit
-    st.sidebar.title("Upload the CV here...")
+    st.sidebar.title("Upload the CV below")
     uploaded_files = st.sidebar.file_uploader("", accept_multiple_files=True)
     
     if uploaded_files:
